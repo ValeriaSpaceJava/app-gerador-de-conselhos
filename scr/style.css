@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0;
+       
+}
+
+
+
+
+
+:root{
+    --text-color: hsl(193, 38%, 86%);
+    --advice-dice-color: hsl(150, 100%, 66%);
+    --advice-card-color: hsl(217, 19%, 24%);
+    --background-color: hsl(218, 23%, 16%);
+}
+
+body{
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container{
+    height: 100%;    
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.conteudo-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--advice-card-color);
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    top: 25%;
+    transform: translate(-50% -50%);
+
+    
+    
+}
+
+.conteudo-card .advice-id{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--advice-dice-color);
+    margin-top: 10px;
+   
+   
+   
+}
+
+.conteudo-card .advice-description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    color: var(--text-color);
+
+}
+
+.conteudo-card .linha-divisoria .linha-divisoria-imagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--advice-dice-color);
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    
+}
+.conteudo-card .div-botao-sorteio-conselho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: flex-end;
+    height: 55%;
+    
+
+
+}
+
+.conteudo-card .div-botao-sorteio-conselho .botao-sorteio-conselho{
+    border-radius: 50%;
+    background-color: var(--advice-dice-color);
+    width: 60px;
+    height: 60px;
+}
+
+.botao-sorteio-conselho:hover{
+    color: #53ffab;
+    cursor:pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+
+
+}
